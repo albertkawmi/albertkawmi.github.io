@@ -13,17 +13,17 @@ html {
 
 body {
   background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
+  background-position: center;
   background-size: cover;
+  background-repeat: fixed;
   margin: 0;
   padding: 0; }
   @media only screen and (min-width: 461px) and (max-width: 768px) {
     body {
-      background-size: auto 100vmax;
-      background-position: fixed; } }
+      background-size: auto 100vmax; } }
   @media only screen and (max-width: 460px) {
     body {
-      background-size: auto 100vmax;
-      background-position: fixed; } }
+      background-size: auto 100vmax; } }
 
 a, a:visited, a:active {
   color: rgba(114, 166, 3, 0.9); }
