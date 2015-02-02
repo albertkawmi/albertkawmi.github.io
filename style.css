@@ -16,12 +16,6 @@ html {
 body {
   margin: 0;
   padding: 0; }
-  @media only screen and (min-width: 461px) and (max-width: 768px) {
-    body {
-      background-size: auto 100vmax; } }
-  @media only screen and (max-width: 460px) {
-    body {
-      background-size: auto 100vmax; } }
 
 a, a:visited, a:active {
   color: rgba(114, 166, 3, 0.9); }
