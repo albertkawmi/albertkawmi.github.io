@@ -23,6 +23,10 @@ $break-large: 768px;
 }
 */
 
+@-ms-viewport{
+  width: device-width;
+}
+
 // Colours
 $green: rgba(114,166,3,0.9);
 $green-light: rgba(114,166,3,0.1);
@@ -200,7 +204,7 @@ img {
 	padding: 1em;
 	background: $white;
 	@include mq(phone){
-		padding: 0.5em;
+		padding: 0.25em;
 	}	
 }
 
@@ -277,10 +281,11 @@ nav {
 		margin-top: 1em;
 	}
 	@include mq(phone){
-		font-size: 1em;
+		font-size: 0.9em;
 		text-align: center;
 		width: 100%;
 		margin-top: 1em;
+		line-height: 1.5;
 	}
 }
 

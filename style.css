@@ -7,6 +7,9 @@
   @include mq(desktop) { float: none; }
 }
 */
+@-ms-viewport {
+  width: device-width; }
+
 html {
   font-family: Arial;
   font-size: 14px;
@@ -155,7 +158,7 @@ img {
   background: white; }
   @media only screen and (max-width: 460px) {
     .row {
-      padding: 0.5em; } }
+      padding: 0.25em; } }
 
 .row > p {
   padding: 0.5em; }
@@ -221,10 +224,11 @@ nav {
       margin-top: 1em; } }
   @media only screen and (max-width: 460px) {
     nav {
-      font-size: 1em;
+      font-size: 0.9em;
       text-align: center;
       width: 100%;
-      margin-top: 1em; } }
+      margin-top: 1em;
+      line-height: 1.5; } }
 
 .title {
   float: left;
