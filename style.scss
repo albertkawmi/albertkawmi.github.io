@@ -36,13 +36,14 @@ $opaque: rgba(255,255,255,0.7);
 html {
 	font-family: Arial;
 	font-size: 14px;
+  background: url('images/glasgow-subway.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 } 
 
 body {
-	background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: fixed;
   	margin: 0;
   	padding: 0;
 	@include mq(tablet) { background-size: auto 100vmax; }

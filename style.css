@@ -9,13 +9,11 @@
 */
 html {
   font-family: Arial;
-  font-size: 14px; }
+  font-size: 14px;
+  background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
+  background-size: cover; }
 
 body {
-  background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: fixed;
   margin: 0;
   padding: 0; }
   @media only screen and (min-width: 461px) and (max-width: 768px) {
