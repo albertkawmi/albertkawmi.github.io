@@ -1,12 +1,27 @@
+/*
+.example-usage {
+  float: left;
+  width: 250px;
+  @include mq(phone) { width: 100% ;}
+  @include mq(tablet) { width: 125px; }
+  @include mq(desktop) { float: none; }
+}
+*/
 html {
   font-family: Arial;
   font-size: 14px; }
 
 body {
-  background: url('glasgow-subway.jpg') no-repeat center center fixed;
+  background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    body {
+      background-size: auto 100vmax; } }
+  @media only screen and (max-width: 460px) {
+    body {
+      background-size: auto 100vmax; } }
 
 a, a:visited, a:active {
   color: rgba(114, 166, 3, 0.9); }
@@ -17,7 +32,8 @@ main {
 div, nav, section, main, header, footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  vertical-align: top; }
+  vertical-align: top;
+  overflow: auto; }
 
 p, h1, h2, h3, h4, h5, h6, ul, li, section {
   margin: 0;
@@ -36,7 +52,7 @@ ul {
   padding: 0 0 0 2em;
   margin: 0 0 1em 0; }
 
-h2 {
+h2, h6 {
   font-size: 2.5em;
   color: white;
   letter-spacing: 4px;
@@ -44,18 +60,54 @@ h2 {
   margin: 1em 0 0 0;
   background: rgba(255, 73, 30, 0.8);
   padding: 0.3em;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 2em; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    h2, h6 {
+      font-size: 1.5em; } }
+  @media only screen and (max-width: 460px) {
+    h2, h6 {
+      font-size: 1.5em; } }
+
+h6 {
+  font-size: 1em;
+  float: right;
+  margin: 0;
+  letter-spacing: 2px; }
+
+h6 a, h6 a:visited {
+  color: white;
+  text-decoration: none; }
+
+h6 a:hover {
+  text-decoration: underline; }
+
+.twitter, .email {
+  width: 50%;
+  float: left; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .twitter, .email {
+      width: 100%; } }
+  @media only screen and (max-width: 460px) {
+    .twitter, .email {
+      width: 100%; } }
 
 h3 {
   font-weight: bold;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1.5; }
+
+.row > h3 {
+  margin: 0 1em;
+  padding-bottom: 1em; }
 
 h4, h5 {
   color: white;
   background: rgba(114, 166, 3, 0.9);
   text-align: right;
   padding: 0.3em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  line-height: 1.5; }
 
 h5 {
   font-size: 1.3em; }
@@ -68,21 +120,54 @@ img {
   float: left;
   padding: 1em;
   background: white; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .half, .third, .two-thirds {
+      width: 100%; } }
+  @media only screen and (max-width: 460px) {
+    .half, .third, .two-thirds {
+      width: 100%; } }
 
 .third {
   width: 33.33%; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .third {
+      width: 100%; } }
+  @media only screen and (max-width: 460px) {
+    .third {
+      width: 100%; } }
+
+@media only screen and (min-width: 461px) and (max-width: 768px) {
+  .third img {
+    width: 50%;
+    float: left; } }
+
+@media only screen and (min-width: 461px) and (max-width: 768px) {
+  .third img + .boxed, .third a + .boxed {
+    width: 50%;
+    float: left;
+    line-height: 1;
+    font-size: 0.8em; } }
 
 .two-thirds {
   width: 66.66%; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .two-thirds {
+      width: 100%; } }
 
 .row {
   overflow: auto;
   padding: 1em;
   background: white; }
+  @media only screen and (max-width: 460px) {
+    .row {
+      padding: 0.5em; } }
+
+.row > p {
+  padding: 0.5em; }
 
 .pale {
   background: rgba(114, 166, 3, 0.1);
-  margin-top: 1em; }
+  padding: 1em; }
 
 .intro {
   font-size: 1.2em; }
@@ -97,7 +182,67 @@ img {
 
 main {
   max-width: 960px;
-  margin: 3em auto; }
+  margin: 10em auto; }
+  @media only screen and (max-width: 460px) {
+    main {
+      margin: 0 auto;
+      padding: 0.5em; } }
+
+header {
+  max-width: 960px;
+  margin: 0 auto; }
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+header li {
+  display: inline;
+  margin: 0 0.5em; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    header li {
+      width: 100%; } }
+  @media only screen and (max-width: 460px) {
+    header li {
+      margin: 2px; } }
+
+.header-wrap {
+  background: white;
+  overflow: auto;
+  padding: 1em; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .header-wrap {
+      width: 100%; } }
+
+nav {
+  float: right;
+  font-size: 1.5em; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    nav {
+      font-size: 1em;
+      text-align: center;
+      width: 100%;
+      margin-top: 1em; } }
+  @media only screen and (max-width: 460px) {
+    nav {
+      font-size: 1em;
+      text-align: center;
+      width: 100%;
+      margin-top: 1em; } }
+
+.title {
+  float: left;
+  margin: 0;
+  text-shadow: 2px 2px #f28e13; }
+  @media only screen and (min-width: 461px) and (max-width: 768px) {
+    .title {
+      width: 100%;
+      text-align: center; } }
+  @media only screen and (max-width: 460px) {
+    .title {
+      width: 100%;
+      text-align: center; } }
 
 @media print {
   /* All your print styles go here */

@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
+var imageResize = require('gulp-image-resize');   // https://www.npmjs.org/package/gulp-image-resize/;
 
 // Compile Our Sass
 gulp.task('sass', function() {
@@ -42,6 +43,23 @@ gulp.task('webserver', function() {
     //host: '127.0.0.2', // not working ??? Using default 'localhost' instead
     livereload: true
   });
+});
+
+// NOT IN DEFAULT TASK - run this task separately with: $ gulp images
+// Resize images
+gulp.task('images', function () {
+  gulp.src('original-images/*.{png,jpg}')
+    .pipe(imageResize({ 
+      width : 1600,
+      //height : 100,
+      upscale : false, // false = only shrink, don't stretch images
+      crop : false,
+      gravity : 'Center',
+      quality : 0.7,
+      //format : '?',
+      imageMagick : true
+    }))
+    .pipe(gulp.dest(''));
 });
 
 // Watch Files For Changes

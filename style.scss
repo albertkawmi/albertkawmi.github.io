@@ -1,3 +1,29 @@
+// Mixins for responsive design
+$break-small: 460px;
+$break-large: 768px;
+
+@mixin mq($media) {
+  @if $media == phone {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-large + 1) { @content; }
+  }
+}
+/*
+.example-usage {
+  float: left;
+  width: 250px;
+  @include mq(phone) { width: 100% ;}
+  @include mq(tablet) { width: 125px; }
+  @include mq(desktop) { float: none; }
+}
+*/
+
+// Colours
 $green: rgba(114,166,3,0.9);
 $green-light: rgba(114,166,3,0.1);
 $yellow: rgb(242,203,5);
@@ -13,10 +39,12 @@ html {
 } 
 
 body {
-	background: url('glasgow-subway.jpg') no-repeat center center fixed;
+	background: url('images/glasgow-subway.jpg') no-repeat center center fixed;
   	background-size: cover;
   	margin: 0;
   	padding: 0;
+	@include mq(tablet) { background-size: auto 100vmax; }
+	@include mq(phone) { background-size: auto 100vmax;}
 }
 
 a, a:visited, a:active {
@@ -30,9 +58,10 @@ main {
 div, nav, section, main, header, footer {
 	box-sizing: border-box;
 	vertical-align: top;
+	overflow: auto;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul, li, section { margin: 0; padding: 0; line-height: 1; font-weight: lighter; }
+p, h1, h2, h3, h4, h5, h6, ul, li, section { margin: 0; padding: 0; line-height: 1; font-weight: lighter;}
 
 p {
 	margin: 0 0 1em 0;
@@ -46,9 +75,10 @@ ul {
 	margin: 0 0 1em 0;
 }
 
-h1 {}
+h1 {
+}
 
-h2 {
+h2, h6 {
 	font-size: 2.5em;
 	color: $white;
 	letter-spacing: 4px;
@@ -58,11 +88,45 @@ h2 {
 	padding: 0.3em;
 	display: inline-block;
 	//border-radius: 5px 5px 0 0;
+	font-size: 2em;
+	@include mq(tablet){
+		font-size: 1.5em;
+	}
+	@include mq(phone){
+		font-size: 1.5em;
+	}
+}
+
+h6 {
+	font-size: 1em;
+	float: right;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+h6 a, h6 a:visited { color: white; text-decoration: none;}
+
+h6 a:hover { text-decoration: underline; }
+
+.twitter, .email {
+	width: 50%;
+	float: left;
+	@include mq(tablet){
+		width: 100%;
+	}
+	@include mq(phone){
+		width: 100%;
+	}
 }
 
 h3 {
 	font-weight: bold;
 	margin-bottom: 1em;
+	line-height: 1.5;
+}
+.row > h3 {
+	margin: 0 1em;
+	padding-bottom: 1em;
 }
 h4, h5 {
 	color: $white;
@@ -70,6 +134,7 @@ h4, h5 {
 	text-align: right;
 	padding: 0.3em;
 	font-size: 1.5em; 
+	line-height: 1.5;
 }
 
 h5 { font-size: 1.3em; }
@@ -83,25 +148,65 @@ img {
 	float: left;
 	padding: 1em;
 	background: $white;
+	@include mq(tablet){
+		width: 100%;
+	}
+	@include mq(phone){
+		width: 100%;
+	}
 }
 
 .third {
 	width: 33.33%;
+	@include mq(tablet){
+		width: 100%;
+	}
+	@include mq(phone){
+		width: 100%;
+	}
 }
+
+.third img {
+	@include mq(tablet){
+		width: 50%;
+		float: left;
+	}
+}
+
+.third img + .boxed, .third a + .boxed {
+	@include mq(tablet){
+		width: 50%;
+		float: left;
+		line-height: 1;
+		font-size: 0.8em;
+	}
+}
+
+
 
 .two-thirds {
 	width: 66.66%;
+	@include mq(tablet){
+		width: 100%;
+	}
 }
 
 .row {
 	overflow: auto;
 	padding: 1em;
 	background: $white;
+	@include mq(phone){
+		padding: 0.5em;
+	}	
+}
+
+.row > p {
+	padding: 0.5em;
 }
 
 .pale {
 	background: $green-light;
-	margin-top: 1em;
+	padding: 1em;
 }
 
 .intro {
@@ -120,7 +225,73 @@ img {
 
 main {
 	max-width: 960px;
-	margin: 3em auto;
+	margin: 10em auto;
+	@include mq(phone){
+		margin: 0 auto;
+		padding: 0.5em;
+	}	
+}
+
+header {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	display: inline;
+	margin: 0 0.5em;
+	@include mq(tablet){
+		width: 100%;
+	}
+	@include mq(phone){
+		margin: 2px;
+	}	
+}
+
+.header-wrap {
+	background: $white;
+	overflow: auto;
+	padding: 1em;
+	@include mq(tablet){
+		width: 100%;
+	}
+}
+
+nav {
+	float: right;
+	font-size: 1.5em;
+	@include mq(tablet){
+		font-size: 1em;
+		text-align: center;
+		width: 100%;
+		margin-top: 1em;
+	}
+	@include mq(phone){
+		font-size: 1em;
+		text-align: center;
+		width: 100%;
+		margin-top: 1em;
+	}
+}
+
+.title {
+	float: left;
+	margin: 0;
+	text-shadow: 2px 2px $orange-light;
+	@include mq(tablet){
+		width: 100%;
+		text-align: center;
+	}	
+	@include mq(phone){
+		width: 100%;
+		text-align: center;
+	}	
 }
 
 @media print { 
