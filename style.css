@@ -28,7 +28,7 @@ main {
 
 div, nav, section, main, header, footer {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
   vertical-align: top;
   overflow: auto; }
 

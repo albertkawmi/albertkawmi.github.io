@@ -14,10 +14,7 @@ gulp.task('sass', function() {
 
     return gulp.src('style.scss')
       .pipe(sass())
-  		.pipe(prefix({
-            browsers: ['last 3 versions', '> 1%'],
-            cascade: false
-      }))
+  		.pipe(prefix())
     	.pipe(rename('style.css'))
     	.pipe(gulp.dest(''))
       .pipe(connect.reload());
