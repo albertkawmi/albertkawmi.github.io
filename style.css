@@ -26,6 +26,9 @@ a, a:visited, a:active {
 main {
   padding: 2em; }
 
+.contact {
+  display: none; }
+
 div, nav, section, main, header, footer {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -89,6 +92,9 @@ h6 a:hover {
   @media only screen and (max-width: 460px) {
     .twitter, .email {
       width: 100%; } }
+
+.phone {
+  display: none; }
 
 h3 {
   font-weight: bold;
@@ -247,5 +253,45 @@ nav {
   /* All your print styles go here */
   nav {
     display: none !important; }
+  html, body {
+    width: 210mm;
+    height: 297mm; }
   html {
-    font-size: 12px; } }
+    font-size: 11px;
+    background: none; }
+  main {
+    margin: 0;
+    padding: 0; }
+  .header-wrap {
+    padding: 1em; }
+  .half {
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+  .half > img {
+    display: none; }
+  .row {
+    padding: 1em 0;
+    margin: 0; }
+  h2 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center; }
+  h6 {
+    display: none; }
+  section {
+    margin: 0;
+    padding: 0; }
+  .contact {
+    display: block;
+    float: right;
+    font-size: 2em; }
+  .phone {
+    display: block;
+    float: left; }
+  .twitter, .email, .phone {
+    width: 33%;
+    text-align: center; } }
+
+@page {
+  margin: 1em; }
