@@ -220,3 +220,7 @@ pip-log.txt
 #### Sublime-text
 *.sublime-project
 *.sublime-workspace
+
+# Jekyll build folders
+_site
+.sass-cache
