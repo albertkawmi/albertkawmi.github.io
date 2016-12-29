@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   text-shadow: 0 2px 0 white;
   a {
     color: inherit;
@@ -74,7 +74,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $lightBlue;
   }
 }
 
@@ -117,6 +117,7 @@ img {
 }
 
 .date {
+  margin-top: 1em;
   font-style: italic;
   color: $gray;
 }
@@ -152,7 +153,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 1em;
 }
 
 .masthead {
@@ -242,11 +243,6 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
@@ -270,13 +266,39 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  &:first-child h2 {
+    margin-top: 0;
+  }
+}
+
+.entry {
+  .excerpt {
+    color: $gray;
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-size: 0.875em;
+  }
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7em;
+  color: white;
+  background: $gray;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .wrapper-footer {
-  margin-top: 50px;
+  margin-top: 1em;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  // background-color: $lightGray;
 }
 
 footer {
