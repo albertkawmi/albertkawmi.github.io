@@ -33,15 +33,15 @@ file --mime-type -b filename
 find . -type f -name '*.txt' -exec sed -i '.bak' s/this/that/ {} +
 ```
 Let's break this one down. We want to `find`
-* ... in `.` the current directory (or this `could/be/any/path`)
-* ... something that has a `-type` of `f` for file
-* ... whose `-name` mathches this regular expression `'*.txt'`
-* ... then `-exec`ute this following command for every file that matches
-* ... `sed` replace text in the file, and do this `-i`n place
-* ... but before you do, make a backup with extension `'.bak'`
-* ... then replace `s/this/that` (the word 'this' for the word 'that')
-* ... for the file passed from `find` via curly braces `{}`
-* ... and the `+` at the end passes all matching file names to the `exec` command (this is a bit confusing but [this Stack Overflow answer][2] helped)
+* in `.` the current directory (or this `could/be/any/path`)
+* something that has a `-type` of `f` for file
+* whose `-name` mathches this regular expression `*.txt`
+* then `-exec`ute this following command for every file that matches
+* `sed` replace text in the file, and do this `-i`n place
+* but before you do, make a backup with extension `'.bak'`
+* then replace `s/this/that` (the word 'this' for the word 'that')
+* for the file passed from `find` via curly braces `{}`
+* and the `+` at the end passes all matching file names to the `exec` command (this is a bit confusing but [this Stack Overflow answer][2] helped)
 
 ### My most common used grep arguments...
 ```bash
