@@ -56,7 +56,7 @@ By force of habit, I still prefer `grep` to other text search tools 🤓
 ```
 history | grep test.txt
 ```
-`history` will list your most recent terminal commands. Piping `|` this to `grep` will filter those commands that match, in this case that contain `ssh`.
+`history` will list your most recent terminal commands. Piping `|` this to `grep` will filter those commands that match, in this case that contain `test.txt`.
 
 Matching commands will be preceded by an ID number like `509 touch test.txt` and you can run this command again by typing an exclamation mark followed by the ID, in this case `!509`.
 
