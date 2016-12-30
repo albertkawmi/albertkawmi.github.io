@@ -28,11 +28,12 @@ The option `h` is for human-readable, `c` is the total count and `s` gives a sum
 file --mime-type -b filename
 ```
 
-### Using the `find` command and `exec`uting a command on each matching file
+### Using the `find` command to `exec`ute a command on each matching file
 ```bash
 find . -type f -name '*.txt' -exec sed -i '.bak' s/this/that/ {} +
 ```
-Let's break this one down. We want to `find`
+Let's break this one down. We want to `find`...
+
 * in `.` the current directory (or this `could/be/any/path`)
 * something that has a `-type` of `f` for file
 * whose `-name` mathches this regular expression `*.txt`
@@ -43,7 +44,7 @@ Let's break this one down. We want to `find`
 * for the file passed from `find` via curly braces `{}`
 * and the `+` at the end passes all matching file names to the `exec` command (this is a bit confusing but [this Stack Overflow answer][2] helped)
 
-### My most common used grep arguments...
+### My most-used grep command
 ```bash
 grep -rli --exclude-dir=libs "videoPlayer" app/js
 ```
@@ -59,7 +60,7 @@ history | grep test.txt
 
 Matching commands will be preceded by an ID number like `509 touch test.txt` and you can run this command again by typing an exclamation mark followed by the ID, in this case `!509`.
 
-In this example, my use case is "what was a recent command I ran on test.txt? I want to run it again..." Can be handy for those long, cryptic commands that you need to go back to.
+In this example, my use case is "what was a recent command I ran on test.txt? I want to run it again..." It can be handy for those long, cryptic commands that you need to go back to.
 
 [1]: http://ss64.com/bash/du.html "du man page"
 [2]: http://stackoverflow.com/questions/6085156/using-semicolon-vs-plus-with-exec-in-find#answer-6085237 "+ vs ; when using find and exec"
