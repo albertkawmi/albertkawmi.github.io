@@ -2,8 +2,9 @@
 layout: post
 title: Useful bash commands I always forget...
 tags:
-    - bash
-    - command line
+  - bash
+  - command line
+published: true
 ---
 
 A mixed selection. Maybe if I write them down, I'll remember them.
@@ -26,6 +27,7 @@ The option `h` is for human-readable, `c` is the total count and `s` gives a sum
 ```bash
 file --mime-type -b filename
 ```
+
 ### Using the `find` command and `exec`uting a command on each matching file
 ```bash
 find . -type f -name '*.txt' -exec sed -i '.bak' s/this/that/ {} +
