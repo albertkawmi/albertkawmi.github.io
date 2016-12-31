@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+    <div id="top" class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -40,7 +40,9 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          <span class="back"><a href="javascript:history.back()">⬅︎ Back</a></span>
+          <span class="icons">{% include svg-icons.html %}</span>
+          <span class="top"><a href="javascript:location.replace('#top')">Top ⬆︎</a></span>
         </footer>
       </div>
     </div>

@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: #6d6d6d;
+  color: $mediumGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 32px;
-  text-shadow: 0 2px 0 white;
+  text-shadow: 0 2px 0 $white;
   a {
     color: inherit;
   }
@@ -289,17 +289,35 @@ nav {
 .tag {
   display: inline-block;
   font-size: 0.7em;
-  color: white;
-  background: $gray;
+  color: $gray;
+  background: $lightGray;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
 .wrapper-footer {
   margin-top: 1em;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid $lessLightGray;
+  border-bottom: 1px solid $lessLightGray;
+  .footer {
+    display: table;
+    width: 100%;
+  }
+  .back, .icons, .top {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .back, .top {
+    max-width: 50px;
+  }
+  .back {
+    text-align: left;
+  }
+  .top {
+    text-align: right;
+  }
 }
+
 
 footer {
   padding: 20px 0;
