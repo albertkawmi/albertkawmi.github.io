@@ -9,4 +9,29 @@ tags:
 
 Jekyll is a static site generator that's deeply integrated with Github Pages. I had to jump through some hoops to get it working on Mac, so here are the hoops...
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam doloribus magni molestias voluptas cum, rerum, molestiae aut nemo veniam illum voluptatum deserunt ex corporis quos ipsum. Eveniet nemo numquam beatae.
+I installed to /usr/local/bin because it's already in my .bash_profile `$PATH`:
+
+```bash
+sudo gem install -n /usr/local/bin github-pages
+```
+
+Then got an error, saying something was out of date, so:
+
+```bash
+sudo gem update --system
+```
+
+Still getting an error unable to install gem. The Jekyll troubleshooting page suggests this:
+
+```bash
+xcode-select --install
+```
+
+🤔 Not sure what that does, exactly, but let's try again now:
+
+```bash
+sudo gem install -n /usr/local/bin github-pages
+jekyll -v
+```
+
+Hey, it worked.
