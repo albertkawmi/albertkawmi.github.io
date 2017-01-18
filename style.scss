@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $times;
   color: $darkGray;
 }
 
@@ -32,8 +32,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $mediumGray;
-  font-weight: bold;
+  color: $darkGray;
+  // font-weight: bold;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -111,6 +111,11 @@ img {
   max-width: 100%;
 }
 
+hr {
+  border: 0;
+  border-top: solid 1px $lightGray;
+  margin: 32px 0;
+}
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -206,6 +211,7 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
+  font-family: $helveticaNeue;
 
   @include mobile {
     margin: 3px 0;
@@ -309,6 +315,8 @@ nav {
   }
   .back, .top {
     max-width: 50px;
+    font-size: 16px;
+    font-family: $helveticaNeue;
   }
   .back {
     text-align: left;

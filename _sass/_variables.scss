@@ -17,14 +17,10 @@ $darkGray: #333;
 $darkerGray: #222;
 $black: #000;
 
-// Default paragraph text
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-// Headings
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-// Not used?
 $georgia: Georgia, serif;
+$times: "Times New Roman", Times, serif;
 
 // Mobile breakpoints
 @mixin mobile {
