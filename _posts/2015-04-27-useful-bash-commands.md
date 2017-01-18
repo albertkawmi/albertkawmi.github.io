@@ -7,7 +7,7 @@ tags:
 published: true
 ---
 
-A mixed bunch of bash commands... Maybe if I write them down, I'll remember them.
+A mixed bunch of bash commands that I keep coming back to.
 
 _Warning: I've mostly used these on Mac OS X, not Linux._
 
@@ -86,9 +86,9 @@ kill -9 3447
 ```
 `lsof` is short for 'list open files', where 'files' includes network files or sockets. In this case we filter by port `:8080` and pipe the result to grep so that only the files that are `LISTEN`ing will be listed.
 
-The process status `ps` gives us more info about the process with id `3447` in this case.`-e` selects all processes and `-f` outputs full listing details.
+The process status `ps` gives us more info about the process with id `3447`. The `-e` flag selects all processes and `-f` outputs full listing details.
 
-The last command kills the process with that id. The `-9` flag prevents the process from resisting so only use this if you're sure you want to kill it.
+The last command `kill`s the process with that id. The `-9` flag prevents the process from resisting so only use this if you're sure you want to kill it.
 
 [1]: http://ss64.com/bash/du.html "du man page"
 [2]: http://stackoverflow.com/questions/6085156/using-semicolon-vs-plus-with-exec-in-find#answer-6085237 "+ vs ; when using find and exec"
