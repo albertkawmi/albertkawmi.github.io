@@ -7,7 +7,7 @@ tags:
     - github
 ---
 
-Jekyll is a static site generator that's deeply integrated with Github Pages. I had to jump through some hoops to get it working on Mac, so here are the hoops...
+Jekyll is a static site generator that's deeply integrated with Github Pages. I had to jump through some hoops to get it working on Mac...
 
 I installed to /usr/local/bin because it's already in my .bash_profile `$PATH`:
 

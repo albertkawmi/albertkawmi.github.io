@@ -6,7 +6,7 @@ tags:
     - design
 ---
 
-[Meyer's famous CSS reset][1] is a great starting point, but it doesn't do much for forms. I found this gem buried in a forum thread on CSS Tricks and found it pretty useful.
+[Meyer's famous CSS reset][1] is an excellent starting point, but it doesn't do much for forms. I found this snippet buried in a forum thread on CSS Tricks and found it pretty useful.
 
 I'm reposting it here because the original has messy spacing and some redundant selectors, so I've cleaned it up:
 
