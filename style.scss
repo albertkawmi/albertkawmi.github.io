@@ -149,6 +149,22 @@ hr {
     clear: both;
 }
 
+// responsive iframes hack
+.iframe-wrap {
+  position: relative;
+  padding-bottom: 66.67%; // This the aspect ratio you can change
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
