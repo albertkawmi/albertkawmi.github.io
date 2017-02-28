@@ -6,7 +6,7 @@ tags:
     - learning
 ---
 
-Whatever you think of the practicalities of functional programming, it's an interesting paradigm. It has also become more relevant than ever in the JavaScript world. Here a few individuals from whom I've learned a great deal about this (and about programming in general).
+Here a few individuals from whom I've learned a great deal about functional programming (and about programming in general).
 
 # Fun, Fun, Function
 
@@ -16,11 +16,11 @@ Mattias Petter Johansson aka MPJ has a [YouTube video series on functional progr
     <iframe width="300" height="200" src="https://www.youtube.com/embed/BMUiFMZr7vk?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84" frameborder="0" allowfullscreen></iframe>
 </div>
 
-He covers all sorts of topics on his YouTube channel and well worth following [@mpjme on Twitter][2].
+He covers all sorts of topics on his YouTube channel. A funny guy too: [@mpjme on Twitter][2].
 
 # Jafar Hussein
 
-I was first expost to this guy in his 2014 talk on [Async JavaScript at Netflix][3]:
+I was first exposed to this guy in his 2014 talk on [Async JavaScript at Netflix][3]:
 <div class="iframe-wrap">
     <iframe width="300" height="200" src="https://www.youtube.com/embed/XE692Clb5LU" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -39,11 +39,11 @@ It turns out Scott is the author of [Ramda.js - a functional programming toolkit
 
 # Thinking in Ramda by Randy Coulman
 
-Randy deserves his own mini-shout out for [these excellent articles about Thinking in Ramda][7]. This introduced me to the ideas behind the 'point free' style and some of the practical uses for Ramda.js
+Randy gets his own mini-shout out for [these excellent articles about Thinking in Ramda][7]. This introduced me to the ideas behind the 'point free' style and some of the practical uses for Ramda.js
 
 # Dan Abramaov
 
-Inventor of the Redux data flow framework. This freakishly productive developer produces so much open source and now works for Facebook.
+Inventor of the Redux framework. This freakishly productive developer produces so much open source and now works for Facebook.
 
 <div class="iframe-wrap">
     <iframe width="300" height="200" src="https://www.youtube.com/embed/xsSnOQynTHs" frameborder="0" allowfullscreen></iframe>
@@ -73,7 +73,7 @@ Without doubt, my favourite academic hedgehog.
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/albertkawmi">@albertkawmi</a> I always recommend learning haskell :)</p>&mdash; Brian Lonsdorf (@drboolean) <a href="https://twitter.com/drboolean/status/811984650742530048">December 22, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-That [Prof. Frisbee course on Egghead.io][11] really delves into the more theoretical conceptes of functional programming within a JavaScript context.
+That [Prof. Frisbee course on Egghead.io][11] really delves into the more theoretical concepts of functional programming within a JavaScript context.
 
 But yes, we should all just learn Haskell.
 

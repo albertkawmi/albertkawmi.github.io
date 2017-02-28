@@ -3,6 +3,7 @@ layout: post
 title: Pull Request Checklist
 tags:
     - workflow
+    - code review
 ---
 
 A list compiled from past mistakes...
