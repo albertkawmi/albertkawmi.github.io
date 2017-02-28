@@ -16,7 +16,7 @@ Mattias Petter Johansson aka MPJ has a [YouTube video series on functional progr
     <iframe width="300" height="200" src="https://www.youtube.com/embed/BMUiFMZr7vk?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84" frameborder="0" allowfullscreen></iframe>
 </div>
 
-He covers all sorts of topics on his YouTube channel. A funny guy too: [@mpjme on Twitter][2].
+He covers all sorts of topics on his YouTube channel. He's on Twitter, too: [@mpjme][2].
 
 # Jafar Hussein
 
