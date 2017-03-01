@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pull Request Checklist
+title: Code Review Checklist
 tags:
     - workflow
     - code review
