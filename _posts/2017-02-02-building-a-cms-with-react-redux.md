@@ -7,9 +7,11 @@ tags:
     - javascript
 ---
 
-Prior to this project I had built website admin areas or Content Management Systems using Node/Express and Angular 1. Switching to React + Redux on this project worked out well for the product as well as the development experience. As I went along, I wrote down the following notes as points of learning or discussion.
+I built the front-end of a CMS in React/Redux and wrote down a few points of learning and discussion.
 
-They're mostly notes about tools, libraries and architectural considerations.
+Prior to this project I had built website admin areas or content management systems using Node/Express and Angular 1. Switching to React + Redux on this project worked out well for the product as well as the development experience.
+
+Whilst not my first React work, this was my first non-toy Redux app. The notes are mostly about tools, libraries and architectural considerations.
 
 # Use `create-react-app`
 
