@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Using React Context for Redux-like One-Way Data Flow
+title: Using React Context for One-Way Data Flow
 tags:
     - react
     - one-way data flow
-    - redux
 ---
 
-The docs on React context start off with the sub-heading "Why not to use context" - and right enough, it is one of these patterns that is open to abuse - but the API is pretty useful. To test it out, I tried implementing a Redux-like one-way data flow using just React context.
+To learn about this feature, I tried implementing a simple one-way data flow using just React context.
 
-If you're unfamiliar with the ideas around [Redux, the data-flow is explained here][1]. My example below uses a(n over-)simplified version of this idea of unidrectional data-flow.
+The [docs on React context](https://facebook.github.io/react/docs/context.html) start off with the sub-heading "Why not to use context" as it is one of these patterns that is open to abuse... but the API is pretty useful.
 
-Due to a sudden and acute failure of imagination, it's a todo app (sorry):
+Due to a sudden and acute failure of imagination, here's another todo app (sorry):
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
@@ -129,7 +128,7 @@ getChildContext() {
 }
 ```
 
-In this example I've got getters for each entity, but it would probably be easier to have a single `getState` action, much like Redux.
+In this example I've got getters for each entity, but it would probably be easier to have a single `getState` action, like [Redux](http://redux.js.org/docs/introduction/) does.
 
 # Accessing actions from child components
 
@@ -174,12 +173,12 @@ Item.contextTypes = CONTEXT;
 
 Here `CONTEXT` is the same one defined for the `App.childContextTypes`.
 
-And that's it. You need this one-liner for any child component that requires context, but it's fairly lightweight.
+And that's it. You need the above one-liner for any child component that requires context, but it's fairly light boilerplate.
 
 # Limitations?
 
 I've only used this on a toy example so far and am unsure how the idea scales in a bigger app. The fact that React docs warn against it is probably reason enough to avoid it on serious production work.
 
-However, for quick apps, demos, hackday projects etc. I think this is an easy way to get up-and-running with one-way data flow.
+However, for quick apps, demos, hackday projects etc. I think this is an easy way to get up-and-running with one-way data flow using only React.
 
-[1]: http://redux.js.org/docs/basics/DataFlow.html
+It saves having to pass callback functions down every level in your component tree.
