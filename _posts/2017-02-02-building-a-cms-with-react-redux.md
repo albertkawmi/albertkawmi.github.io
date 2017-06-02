@@ -73,7 +73,7 @@ But since then, I've worked on a couple of CRUD apps and the Redux-CRUD library 
 
 # Redux-Form
 
-Another excellent library, though my experience with [Redux Form][6] had positives...
+Another excellent library. My experience with [Redux Form][6] had positives...
 
 * It saved me a LOT of time and boilerplate.
 * It acted as a framework for forms across the app, keeping things consistent.
@@ -82,7 +82,7 @@ Another excellent library, though my experience with [Redux Form][6] had positiv
 ...and negatives...
 
 * I found the version 5 API hard to learn and a bit confusing in places.
-* It made a stamp on the amp in such a way that incoming developers _have_ to learn Redux Form in order to understand what's happening.
+* It made a stamp on the app in such a way that incoming developers _have_ to learn Redux Form in order to understand what's happening.
 * Changes in React 15.2 caused a wall of red warnings in the console.
 
 The last point is [discussed in detail here][7] and is no longer a problem in version 6+. However, migrating our app from 5 to 6 is not a simple matter. For now we are living with it, but it's technical debt that will need to be fixed eventually.
