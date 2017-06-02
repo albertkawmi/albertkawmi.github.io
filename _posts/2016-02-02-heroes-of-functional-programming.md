@@ -6,7 +6,7 @@ tags:
     - learning
 ---
 
-Here a few individuals from whom I've learned a great deal about functional programming (and about programming in general).
+A short list of individuals from whom I've learned a great deal about functional programming (and about programming in general).
 
 # Fun, Fun, Function
 
@@ -20,7 +20,7 @@ He covers all sorts of topics on his YouTube channel. He's on Twitter, too: [@mp
 
 # Jafar Hussein
 
-I was first exposed to this guy in his 2014 talk on [Async JavaScript at Netflix][3]:
+Jafar has an excellent 2014 talk on [Async JavaScript at Netflix][3]:
 <div class="iframe-wrap">
     <iframe width="300" height="200" src="https://www.youtube.com/embed/XE692Clb5LU" frameborder="0" allowfullscreen></iframe>
 </div>
