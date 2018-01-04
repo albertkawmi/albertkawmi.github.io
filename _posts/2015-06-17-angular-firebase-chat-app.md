@@ -11,7 +11,6 @@ Angular is a JavaScript framework and Firebase is a real-time database service. 
 First, a quick and dirty `index.html` file:
 
 ```html
-<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <script data-require="angular.js@1.4.0-rc.0" data-semver="1.4.0-rc.0" src="https://code.angularjs.org/1.4.0-rc.0/angular.js"></script>
