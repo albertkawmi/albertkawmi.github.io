@@ -91,4 +91,4 @@ The controller simply binds the `firebaseService` to the view. In a real app, yo
 
 But that's it. Try it:
 
-<iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/Gf7sRpRVJO4clHEi247x/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/BJ8T9f/" frameborder="0" allowfullscren="allowfullscren"></iframe>
