@@ -9,11 +9,11 @@ Over the past few years I've stumbled across some delightful short stories with 
 
 If you know of any others in a similar style _please_ [let me know](mailto:albert@kawmi.co)!
 
-[The Machine Stops](http://archive.ncsa.illinois.edu/prajlich/forster.html) by EM Forester
+[The Machine Stops](https://www.gutenberg.org/cache/epub/72890/pg72890-images.html#THE_MACHINE_STOPS) by EM Forester
 
 [The Robot and the Baby](http://www-formal.stanford.edu/jmc/robotandbaby/robotandbaby.html) by John McCarthy
 
-[The Last Question](http://multivax.com/last_question.html) by Isaac Asimov
+[The Last Question](https://users.ece.cmu.edu/~gamvrosi/thelastq.html) by Isaac Asimov
 
 [They're Made Out Of Meat](http://www.mit.edu/people/dpolicar/writing/prose/text/thinkingMeat.html) by Terry Bisson
 
@@ -21,4 +21,4 @@ If you know of any others in a similar style _please_ [let me know](mailto:alber
 
 [Planet Lion](http://uncannymagazine.com/article/planet-lion/) by Catherynne M. Valente
 
-[The Janitor In Space](http://americanshortfiction.org/2014/07/01/janitor-space/) by Amber Sparks
+[The Janitor In Space](https://americanshortfiction.org/janitor-space/) by Amber Sparks
